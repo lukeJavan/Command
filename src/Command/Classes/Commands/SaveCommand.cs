@@ -8,9 +8,9 @@ namespace Command.Classes.Commands;
 // but rather to pass the call to one of the business logic objects
 public class SaveCommand : ICommand
 {
-    private FileReceiver _fileToSave;
+    private CurrentFile _fileToSave;
 
-    public SaveCommand(FileReceiver fileToSave)
+    public SaveCommand(CurrentFile fileToSave)
     {
         _fileToSave = fileToSave;
     }

@@ -3,11 +3,11 @@ namespace Command.Classes.Receiver;
 // The Receiver class contains some business logic. 
 // The receiver does the actual work deferred by the command.
 // In this case, it simulates saving a file.
-public class FileReceiver
+public class CurrentFile
 {
     private string Name { get; set; }
 
-    public FileReceiver(string name)
+    public CurrentFile(string name)
     {
         Name = name;
     }
