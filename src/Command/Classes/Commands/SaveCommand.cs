@@ -15,6 +15,7 @@ public class SaveCommand : ICommand
         _fileToSave = fileToSave;
     }
 
+    // Commands can delegate to any methods of a receiver.
     public void Execute()
     {
         _fileToSave.Save();
