@@ -1,2 +1,18 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Command.Classes.Commands;
+using Command.Classes.Invokers;
+using Command.Classes.Receiver;
+
+namespace Command;
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        NoteBookApplication noteBook = new();
+
+        FileReceiver fileToSave = new("example.txt");
+
+        noteBook.SetCommand(new SaveCommand(fileToSave));
+        noteBook.SaveFile();
+    }
+}
