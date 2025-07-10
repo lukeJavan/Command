@@ -13,6 +13,6 @@ public class Program
         FileReceiver fileToSave = new("example.txt");
 
         noteBook.SetCommand(new SaveCommand(fileToSave));
-        noteBook.SaveFile();
+        noteBook.ExecuteCommand();
     }
 }

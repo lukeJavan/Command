@@ -11,7 +11,7 @@ public class NoteBookApplication
         _command = command;
     }
 
-    public void SaveFile()
+    public void ExecuteCommand()
     {
         if (_command is ICommand)
             _command.Execute();
